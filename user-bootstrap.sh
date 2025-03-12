@@ -68,7 +68,7 @@ else
 fi
 
 # Build and install P4 tools
-sudo cp  root/intf-fix/install-p4-tools.sh /home/sdn/onos/tools/dev/p4vm/install-p4-tools.sh
+sudo cp  /root/intf-fix/install-p4-tools.sh /home/sdn/onos/tools/dev/p4vm/install-p4-tools.sh
 DEBUG_FLAGS=false FAST_BUILD=true USE_STRATUM=false bash /home/sdn/onos/tools/dev/p4vm/install-p4-tools.sh
 echo 'export BMV2_INSTALL=/usr/local' >> ~/.bash_aliases
 if [[ ${USE_STRATUM} = true ]]
